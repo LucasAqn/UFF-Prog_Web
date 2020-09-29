@@ -1,0 +1,48 @@
+body{
+    background-color: gainsboro;
+    font-family: Open sans-serif;
+}
+
+#principal{
+    text-align: center;
+    color:#2E8B57;
+
+}
+
+.menu{ 
+    background-color: #2E8B57;
+    height: 45px;
+    max-width: 90% ;
+    margin:0 auto;
+}
+.menu li {
+
+    display: inline-block; 
+    line: 2.0;
+    margin:12px 89px;
+  
+  }
+  
+  .menu a{
+    color:#FFFFFF;
+    text-decoration: none;
+    font-weight: normal ;
+  }
+
+  h2{
+      color: #2E8B57;
+  }
+
+  h3{
+      color:#8FBC8F;
+  }
+
+  form{
+      text-align: center;
+  }
+
+  button{
+      background-color: #8FBC8F;
+      color: #2E8B57;
+      border-radius: 10px;
+  }

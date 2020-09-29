@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Gerenciador de URL's</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1 id="principal">Gerenciador de URL's</h1>
+
+        <nav class=menu>
+            <ul>
+                <li>
+                    <a href="#noticias">Noticias</a>
+                </li>
+                <li>
+                    <a href="#ensino">Ensino</a>
+                </li>
+                <li>
+                    <a href="#commerce">e-Commerce</a>
+                </li>
+                <li>
+                    <a href="#outros">Outros</a>
+                </li>
+            </ul>
+        </nav>
+        <h2>Cadastrar URL's</h2> 
+            <form>
+                <label for="nomeURL">Nome:</label>
+                <input id="nomeURL" type="text">
+                <label for="link">Link:</label>
+                <input id="link" type="url" >
+                <label for="categoria">Categoria URL's:</label>
+                <input list="categorias" name="categoria" id="categoria">
+                    <datalist id="categorias">
+                        <option value="Noticias">
+                        <option value="Ensino">
+                        <option value="e-Commerce">
+                        <option value="Outros">
+                    </datalist>
+                <button>CADASTRAR</button>
+            </form>
+
+        <h2>URL's cadastradas</h2>   
+        
+        <h3 id="noticias">Noticias</h3>
+        <ul>
+            <li>
+                <a href="https://g1.globo.com/">https://g1.globo.com/</a>
+            </li>
+            <li>
+                <a href="https://www.estadao.com.br/">https://www.estadao.com.br/</a>
+            </li>
+            <li>
+                <a href="https://www.folha.uol.com.br/">https://www.folha.uol.com.br/</a>
+            </li>
+        </ul>
+        <h3 id="ensino">Ensino</h3>
+        <ul>
+            <li>
+                <a href="https://pt.coursera.org/">https://pt.coursera.org/</a>
+            </li>
+            <li>
+                <a href="https://www.udemy.com/?utm_source=adwords-brand&utm_medium=udemyads&utm_campaign=NEW-AW-PROS-Branded-Search-Existing-PT-BRA_._ci__._sl_BRA_._vi__._sd_All_._la_PT_._&tabei=7&utm_term=_._ag_66424168314_._ad_318495269999_._de_c_._dm__._pl__._ti_aud-686903222856:kwd-310556426868_._li_1031978_._pd__._&gclid=Cj0KCQjwtsv7BRCmARIsANu-CQe1WIy9l2ZOctqh7DtZCknKKX6SeXFHg4lcEQWc9i0CaEsEZlsH7bYaAjRZEALw_wcB">www.udemy.com/</a>
+            </li>
+        </ul>
+        <h3 id="commerce">e-Commerce</h3>
+        <ul>
+            <li>
+                <a href="https://www.amazon.com.br/?tag=lomadee0850014813-20&ascsubtag=226536395456z7897z1601402164727&lmdsid=647236395456-7897-1601402164727">www.amazon.com.br</a>
+            </li>
+            <li>
+                <a href="https://www.americanas.com.br/">https://www.americanas.com.br/</a>
+            </li>
+            <li>
+                <a href="https://www.mercadolivre.com.br/">https://www.mercadolivre.com.br/</a>
+            </li>
+        </ul>
+        <h3 id="outros">Outros</h3>
+        <ul>
+            <li>
+                <a href="http://www.uff.br/">http://www.uff.br/</a>
+            </li>
+        </ul>
+    </body>
+</html>
