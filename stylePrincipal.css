@@ -1,0 +1,229 @@
+body{
+  font-family: 'Playfair Display', serif;;
+}
+.header {
+  height: 70px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-bottom: 2px solid #3E3C94;
+  background: #fff;
+  z-index: 2;
+}
+
+.header img{
+  width: 21%;
+  margin: auto 0px auto 20px;
+}
+
+/*container do login e sign up*/
+.header-container{
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    padding: 16px 0px;
+    cursor: pointer;
+    position: fixed;
+    top:15px;
+    right: 15px;
+}
+/*botão do login e sign up*/
+.header-container button{
+    border: none;
+    margin: 0px 20px 1px 20px;
+    background-color: #ffffff;
+
+}
+
+.header-container button:hover{
+
+    background-color: #3E3C94;
+    color: #ffffff;
+    padding: 10px;
+    font-size: medium;
+        
+}
+
+  
+/*Modal das telas de login e sign up*/
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    padding-top: 50px;
+    background-image:linear-gradient(rgba(26, 19, 88, 0.884), rgb(168, 152, 228));
+}
+  
+/*Conteúdo do modal*/
+  .modal-content {
+    display: block;
+    background-color: #ffffff;
+    margin: 5% auto 15% auto; 
+    border: 3px groove #888;
+    border-radius: 15px;
+    width: 20%;
+    height:70%;
+    text-align:center ;
+  }
+/*Icone no input*/
+.inputWithIcon input[type="text"] {
+    width: 70%;
+    padding-left:30px ;
+  }
+.inputWithIcon input[type="password"] {
+    width: 70%;
+    padding-left:30px ;
+  }
+.inputWithIcon {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+ 
+  }
+.inputWithIcon i {
+    font-size: 24px;
+    position: absolute;
+    left: 15px;
+    top: 0px;
+    padding: 4px 8px;
+    color: #aaa;
+    transition: 0.3s;
+  }
+  
+.inputWithIcon input[type="text"]:focus + i {
+    color: dodgerBlue;
+  }
+
+.inputWithIcon input[type="password"]:focus + i {
+    color: dodgerBlue;
+  }
+hr{
+    color:rgb(240, 238, 238);
+}
+/*imagem do Login*/
+#imgLogin{
+    width: 40%;
+    margin-top: 20px;
+    margin-left: auto;
+  }
+
+  #imgSignup{
+    width: 35%;
+    margin-top: 20px;
+    margin-left: auto;
+  }
+
+  .lembrar{
+      left:15px;
+      margin-bottom: 20px;
+      padding-left: 15px;
+      text-align: left;
+      font-size: small;
+  }
+
+  .submitbtn{
+      width: 80%;
+      border: 3px solid rgb(14, 15, 75);
+      background-color: rgb(14, 15, 75);
+      color:#ffffff;
+      height: 30px;
+  }
+
+  /* Botão fechar login e sign up */
+  .close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+  } 
+  .close:focus {
+    color: #f44336;
+    cursor: pointer;
+  }
+  
+/*botao de submit*/
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .erro{
+    margin-top:80px;
+  }
+
+  .layoutUrl{
+    
+    display: inline-block;
+    height: 170px;
+    width: 1050px;
+    margin: 10px 120px;
+    border: 2px solid #3E3C94;
+    background-color:  #3d3c9446;
+    opacity: 0.9;
+    border-radius: 10px;
+    
+}
+.layoutUrl:hover{
+    opacity: 0.7;
+}
+
+.grid-1{
+    position: relative;
+    background:#3E3C94;
+    border-bottom: 1px solid #fff ;
+    padding: 2px 10px;
+
+
+}
+.grid-1 i{
+
+    top:15px;
+    right: 50px;
+    font-size: 20px;
+    position: absolute;
+    color: #ffffff;
+}
+.grid-1 h5{
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Secular One', sans-serif;
+}
+
+.grid-2{
+    padding: 5px;
+    border-bottom:1px solid #3E3C94;
+    text-align: center;
+
+}
+.grid-2 a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+.grid-3{
+    margin: 25px 20px 0px 20px;
+}
+
+
+
+.grid-3 p{
+    display: inline;
+    background: #292857;
+    padding: 10px;
+    margin: 20px 20px 0px 20px;
+    border-radius: 15px;
+    color:#fff;
+    opacity: 0.5;
+}
+ 
+
+

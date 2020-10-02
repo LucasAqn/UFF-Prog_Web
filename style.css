@@ -1,48 +1,143 @@
 body{
-    background-color: gainsboro;
-    font-family: Open sans-serif;
+    font-family: 'Playfair Display', serif;;
+}
+.header {
+    height: 70px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    border-bottom: 2px solid #3E3C94;
+    background: #fff;
+    z-index: 2;
 }
 
-#principal{
+.header img{
+    width: 21%;
+    margin: auto 0px auto 20px;
+}
+
+/*container do login e sign up*/
+.header-container{
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    padding: 16px 0px;
+    cursor: pointer;
+    position: fixed;
+    top:5px;
+    right: 15px;
+}
+/*botão do login e sign up*/
+.header-container button{
+    border: none;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    color:#ffffff;
+    background-color: rgb(206, 37, 37);
+
+}
+
+.header-container button:hover{
+    transition: 0.3s;
+    opacity: 0.6;
+        
+}
+
+/*container do login e sign up*/
+
+.cadastrarURL{
+
+    margin:50px 20px 0px 20px;
+    padding:20px 0px 30px 10px;
+    background-color:  #3E3C94;
+    color:#ffffff;
+    border-radius: 10px;
+
+}
+.cadastrarURL input{
+
+    width: 250px;
+    margin:0px 5px 0px 5px;
+}
+.cadastrarURL h4{
     text-align: center;
-    color:#2E8B57;
+}
+.cadastrarURL button{
+    padding: 4px 10px;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+.cadastrarURL button:hover{
+    background-color: rgb(105, 105, 105);
+    color:#fff;
+    opacity:0.5;    
 
 }
 
-.menu{ 
-    background-color: #2E8B57;
-    height: 45px;
-    max-width: 90% ;
-    margin:0 auto;
+.layoutUrl{
+    display: inline-block;
+    height: 170px;
+    width: 1050px;
+    margin: 10px 120px;
+    border: 2px solid #3E3C94;
+    background-color:  #3d3c9446;
+    opacity: 0.9;
+    border-radius: 10px;
+    
 }
-.menu li {
 
-    display: inline-block; 
-    line: 2.0;
-    margin:12px 89px;
-  
-  }
-  
-  .menu a{
-    color:#FFFFFF;
+.layoutUrl:hover{
+    opacity: 0.7;
+}
+.grid-1{
+    position: relative;
+    background:#3E3C94;
+    border-bottom: 1px solid #fff ;
+    padding: 2px 10px;
+
+
+}
+.grid-1 i{
+
+    top:15px;
+    right: 50px;
+    font-size: 20px;
+    position: absolute;
+    color: #ffffff;
+}
+
+.grid-1 h5{
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Secular One', sans-serif;
+}
+
+.grid-2{
+    padding: 5px;
+    border-bottom:1px solid #3E3C94;
+    text-align: center;
+
+}
+
+.grid-2 a{
     text-decoration: none;
-    font-weight: normal ;
-  }
+    color: #ffffff;
+    font-weight: bolder;
+}
 
-  h2{
-      color: #2E8B57;
-  }
+.grid-3{
+    margin: 25px 20px 0px 20px;
+}
 
-  h3{
-      color:#8FBC8F;
-  }
 
-  form{
-      text-align: center;
-  }
 
-  button{
-      background-color: #8FBC8F;
-      color: #2E8B57;
-      border-radius: 10px;
-  }
+.grid-3 p{
+    display: inline;
+    background: #292857;
+    padding: 10px;
+    margin: 20px 20px 0px 20px;
+    border-radius: 15px;
+    color:#fff;
+    opacity: 0.5;
+}
