@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+background: #101010;
+}
+
+.header{
+position: fixed;
+width: 100%;
+height: 60px;
+display: block;
+background-color: #3341FF;
+z-index: 3;
+}
+
+.menu{
+    width: 1000px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.logo{
+    height: 100%;
+    display: table;
+    float: left;
+}
+.logo h1{
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Open Sans', sans-serif;
+    font-size:  32px;
+    font-weight: 200;
+}
+.logo h1 span{
+    font-size:  10px;
+    font-weight: 250;
+}
+.options{ 
+    float: right;
+    height:100%
+}
+
+.options a{      
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;  
+    font-weight: 200;
+}
+.options a li{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size:  20px;
+
+}
+
+.banner{
+    width: 100%;
+    height: 200px;
+    position: fixed;
+    top: 100px;
+    background: blue;
+    background-position: center center;
+}
+.banner-content{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px 50px 20px 50px;
+    padding-top: 10px;  
+    width: 100%;
+    height: 70vh;
+    
+}
+
+.banner-content span{   
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.banner-content h1{
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 3px;   
+}
+
+.banner-content p{ 
+    font-size: 10px;
+    letter-spacing: 1px;  
+}
+
+.modules {
+    width: 100%;
+    position: relative;
+    top: 350px;
+    height: 1500px;
+    background: #101010;
+    z-index: 2;
+    color: white;
+    
+    
+}
+.modules h2{
+    padding-top: 20px;
+    padding-bottom: 25px;
+    font-size: 32px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    text-align: center;
+    
+}
+.modules p{
+    padding-top: 2% 0; 
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 30px;
+}
