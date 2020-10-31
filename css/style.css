@@ -74,7 +74,7 @@ z-index: 3;
     background: blue;
     background-position: center center;
 }
-.banner-content{
+.banner_content{
     color: white;
     font-family: 'Open Sans', sans-serif;
     margin: 10px 50px 20px 50px;
@@ -84,19 +84,19 @@ z-index: 3;
     
 }
 
-.banner-content span{   
+.banner_content span{   
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 3px;
 }
 
-.banner-content h1{
+.banner_content h1{
     font-size: 32px;
     font-weight: 600;
     letter-spacing: 3px;   
 }
 
-.banner-content p{ 
+.banner_content p{ 
     font-size: 10px;
     letter-spacing: 1px;  
 }
@@ -107,7 +107,7 @@ z-index: 3;
     top: 350px;
     height: 1500px;
     background: #101010;
-    z-index: 2;
+
     color: white;
     
     
@@ -125,5 +125,54 @@ z-index: 3;
     padding-top: 2% 0; 
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
+    text-align: center;
     line-height: 30px;
+}
+
+.login_card{
+    background: #3341FF;
+    box-shadow: 1px 1px 3px white;
+    padding: 15px;
+    border-radius: 5px;
+    width: 250px;
+    margin-right: auto;
+    padding-top: 10px;
+    text-align: center;
+    float: right;
+   
+  
+    
+    
+}
+.card_element > input{
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-radius: 5px;
+    outline: 0;
+    width: 100%;
+    height: 25px;
+    padding: 5px;
+}
+
+.card_element > button{
+    background: white;
+    width: 50%;
+    border-radius: 5px;
+    padding: 5px;
+    color: black;
+    border: 0px;
+    outline: 0;
+    
+}
+.arrow-up{
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20 px solid transparent;
+    border-right: 20 px solid transparent;
+    border-bottom: 20 px #3341FF;
+    right: 150px;
+    top: 50px;   
+    display: none;
+    
 }
