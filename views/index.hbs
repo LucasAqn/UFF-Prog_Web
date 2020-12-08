@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrRuL - Portfólio de Links e URLs</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">   
+   
+</head>
+
+<body>
+    <script>
+        function mostrarCard(mostrar, ocultar){
+            if(document.getElementById(mostrar).style.display == 'block'){
+                document.getElementById(mostrar).style.display = 'none';
+            }
+            else{
+                document.getElementById(mostrar).style.display = 'block';
+                document.getElementById(ocultar).style.display = 'none';              
+            }
+        }
+    </script>
+    <!--CABEÇALHO FIXO DA PÁGINA-->
+    <div class="header">
+        <div class="menu">      
+            <div class="logo"> <!--<img src="urrul_logo.png"> Possível imagem para logo-->
+                <h1>UrRuL <span>- Portfólio de Links e URLs</span></h1>
+            </div>
+            <ul class="options">                
+                <a href="/" id="inicio"><li>Início</li></a>
+                <a href="#" id="entrar" onclick="mostrarCard('login_card', 'register_card')"><li> Entrar</li></a>
+                <a><li>|</li></a>
+                <a href="#" id="cadastro" onclick="mostrarCard('register_card', 'login_card')"><li> Cadastrar-se</li></a>
+            </ul>         
+        </div>
+        
+        <form action = "/register" method="POST">
+            <div id = "register_card" class = "register_card">
+           
+                <div class = "card_element">
+                    <input type = "text" name="nome" placeholder="Digite seu Nome" required>
+                    <input type = "email" name="email" placeholder="Digite seu E-mail" required>
+                    <input type = "password" name="senha" placeholder="Insira sua Senha" required>
+                    <input type = "password" name="confirmacaoSenha" placeholder="Confirme sua Senha" required>
+                    <button type="submit" name = "cadastrar"> Cadastrar</button>
+                
+                    {{#if messageCadastro}}
+                        <p>{{messageCadastro}}</p>
+                    {{/if}} 
+                </div> 
+            </div>
+        </form>
+
+        <form action = "/login" method="POST">
+            <div id = "login_card" class = "login_card">
+           
+                <div class = "card_element">
+                    <input type = "email" name="email" placeholder="Digite seu E-mail" required>
+                    <input type = "password" name="senha" placeholder="Insira sua Senha" required>
+                    <button type="submit" name = "entrar">Entrar</button>
+                </div>
+                 {{#if messageLogin}}
+                        <p>{{messageLogin}}</p>
+                    {{/if}} 
+                          
+            </div>
+        </form>  
+    </div>
+
+<!--BANNER DE BOAS VINDAS E AUTO PROPAGANDA DA PÁGINA PRINCIPAL-->
+    <div class="banner">
+        <div class="banner_element">
+                <div class="banner_content">    
+                    <span>Apresentamos:</span>
+                    <h1>UrRuL</h1>
+                    <p>O seu portfólio com os melhores links e URLs!<br> Aqui você poderá conferir
+                        os conteúdos mais interessantes da internet.<br>
+                        Procure pelo conteúdo que lhe agrade e permita-se conhecer novos assuntos.<br>
+                        Cadastre-se agora e tenha um perfil só seu na plataforma para guardar os seus
+                        próprios links e também contribuir com o aumento da nossa comunidade!
+                    </p>
+                </div>
+        </div>
+    </div>
+
+    <!--INICIO DA PÁGINA PRINCIPAL EFETIVAMENTE, COM BLOCOS DE CONTEÚDO DENOMINADOS MÓDULOS-->
+    <div class="modules">
+        
+        {{#if destaques}}
+        <h2>URLs Recomendadas</h2>
+        {{/if}}
+        {{#each destaques}}
+            <p> <a href= {{link}} target="blank">{{nomedaurl}}</a><br></p>
+        {{/each}}
+
+        <div class="caixa_busca"></div>
+            <form action = "/buscar" method="POST">
+                <h2>Buscador de Links</h2>
+                <div>
+                <input type = "text" name="busca" placeholder="Digite um assunto para buscar" required>
+                <button type="submit" name = "buscar">Buscar</button>
+                </div>
+            </form>
+
+            {{#if resultados}}
+                <p>Resultados da Busca<br></p>
+            {{/if}}
+            {{#each busca}}
+                <p> <a href= {{link}} target="blank">{{nomedaurl}}</a><br></p>
+            {{/each}}       
+        </div>
+
+    </div>
+  
+</body>
+</html> 
