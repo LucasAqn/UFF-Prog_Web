@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+background: #101010;
+}
+
+.header{
+position: fixed;
+width: 100%;
+height: 60px;
+display: block;
+background-color: #3341FF;
+z-index: 3;
+}
+
+.menu{
+    width: 1000px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.logo{
+    height: 100%;
+    display: table;
+    float: left;
+}
+.logo h1{
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Open Sans', sans-serif;
+    font-size:  32px;
+    font-weight: 200;
+}
+.logo h1 span{
+    font-size:  10px;
+    font-weight: 250;
+}
+.options{ 
+    float: right;
+    height:100%;
+
+}
+
+.options a{      
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;  
+    font-weight: 200;
+}
+.options a li{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size:  20px;
+
+}
+
+.banner{
+    width: 100%;
+    height: 250px;
+    position: fixed;
+    top: 100px;
+    background: blue;
+    background-position: center center;
+}
+.banner_content{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px 50px 20px 50px;
+    padding-top: 10px;  
+    width: 100%;
+    height: 70vh;
+    
+}
+
+.banner_content span{   
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.banner_content h1{
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 3px;   
+}
+
+.banner_content p{ 
+    font-size: 10px;
+    letter-spacing: 1px;  
+}
+
+.add_link{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px 0px 20px 100px;
+    padding-top: 10px;  
+    height: 70vh;
+}
+
+.add_link span{   
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    
+}
+
+.add_link input{
+    margin-bottom: 10px;
+    border-radius: 5px;
+    outline: 0;
+    width: 50%;
+    height: 25px;
+    padding: 5px;
+    ;
+}
+
+.modules input{
+    margin-bottom: 10px;
+    border-radius: 5px;
+    outline: 0;
+    width: 45%;
+    height: 25px;
+    padding: 5px;
+   ;
+
+    ; 
+}
+
+.modules button{
+    background: white;
+    width: 5%;
+    border-radius: 5px;
+    padding: 5px;
+    color: black;
+    margin-left: 10px;
+    border: 0px;
+    outline: 0; 
+}
+
+.add_link button{
+    background: white;
+    width: 50%;
+    border-radius: 5px;
+    padding: 4px;
+    color: black;
+    margin-left: 0px;
+    border: 0px;
+    outline: 0; 
+}
+
+.modules {
+    width: 100%;
+    position: relative;
+    top: 350px;
+    height: 1500px;
+    background: #101010;
+    color: white;
+    text-align: center;
+    
+    
+    
+}
+.modules h2{
+    padding-top: 20px;
+    padding-bottom: 25px;
+    font-size: 32px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    text-align: center;
+    
+}
+.modules p{
+    padding-top: 2% 0; 
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    line-height: 30px;
+}
+
+.register_card{
+    background: #3341FF;
+    box-shadow: 1px 1px 3px white;
+    padding: 15px;
+    border-radius: 5px;
+    width: 250px;
+    margin-right: 65px;
+    padding-top: 10px;
+    text-align: center;
+    float: right;
+    display: none;
+}
+
+.card_element > p{
+    color:white;
+}
+.login_card{
+    background: #3341FF;
+    box-shadow: 1px 1px 3px white;
+    padding: 15px;
+    border-radius: 5px;
+    width: 250px;
+    margin-right: 250px;
+    padding-top: 10px;
+    text-align: center;
+    float: right;
+    display: none;
+}
+.card_element > input{
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-radius: 5px;
+    outline: 0;
+    width: 100%;
+    height: 25px;
+    padding: 5px;
+    ;
+}
+
+.card_element > button{
+    background: white;
+    width: 50%;
+    border-radius: 5px;
+    padding: 5px;
+    color: black;
+    border: 0px;
+    outline: 0;  
+}
