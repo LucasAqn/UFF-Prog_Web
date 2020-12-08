@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrRuL - Portfólio de Links e URLs</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">   
+   
+</head>
+
+<body>
+    <!--CABEÇALHO FIXO DA PÁGINA-->
+    <div class="header">
+        <div class="menu">      
+            <div class="logo"> <!--<img src="urrul_logo.png"> Possível imagem para logo-->
+                <h1>UrRuL <span>- Portfólio de Links e URLs</span></h1>
+            </div>
+            <ul class="options">                
+                <a id="perfil"><li>
+                    
+                  <p>Bem vindo, {{nomeUsuario}}</p>
+                  
+                    </li></a>
+                <a><li>|</li></a>
+                <a href="/" id="Sair"><li>Sair</li></a>
+            </ul>         
+        </div>
+    </div>
+    <!--CADASTRO DE NOVOS LINKS-->
+    <form action = "/addLink" method="POST">
+        <div class="banner">
+            <div class="banner_element">
+                    <div class ="add_link">
+                        
+
+                        <input type = "text" value="{{IdUsuario}}"} name="userId" style="display: none;">
+                        <input type = "text" value="{{nomeUsuario}}"} name="userName" style="display: none;"> 
+                        <span>Cadastrar Nova URL:</span>
+                        <label><br>Link<br></label>
+                        <input type = "text" name="link" placeholder="Insira o link" required>    
+                        <label><br>Nome da URL<br></label>
+                        <input type = "text" name="nomeurl" placeholder="Digite um nome para este link" required>
+                        <span><label ><br>Tags</label></span>
+                        <input style= "width: 20%;" type = "text" name="tags" placeholder="Insira as tags separando-as com ;" required>   
+                        <span><label style= "margin-left: 20px;">Link Privado</label></span>
+                        <input style= "width: 3%; height: 15px; margin-top: 10px;" type="checkbox" name="privado"  unchecked>
+                        <br>
+                        <button type="submit" name = "salvarLink">Cadastrar URL</button>               
+                    </div>
+                
+            </div>
+        </div>
+    </form>
+    <!--LISTA DOS LINKS CADASTRADOS PELO USUARIO-->
+    <div class="modules">
+             
+        {{#if seusLinks}}
+        <h2>Seus Links</h2>
+        {{/if}}
+        {{#each seusLinks}}
+            <p> <a href= {{link}} target="blank">{{nomedaurl}}</a><br></p>
+        {{/each}}
+
+        
+       
+    </div>
+  
+</body>
+</html> 
